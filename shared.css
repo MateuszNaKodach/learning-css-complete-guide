@@ -2,9 +2,24 @@
     box-sizing: border-box;
 }
 
+html{
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    overflow-x: hidden;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
@@ -31,7 +46,7 @@ body {
     display: inline-block;
 }
 
-.main-header__brand img{
+.main-header__brand img {
     height: 100%;
 }
 
