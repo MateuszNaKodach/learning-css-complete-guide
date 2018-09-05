@@ -24,6 +24,13 @@ main {
     width: 100%;
 }
 
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+    border: 1px solid red !important;
+    background: #faacac;
+}
+
 /*.signup-form input[type="checkbox"] */
 .signup-form input[id*="terms"],
 .signup-form input[id*="terms"] + label {
@@ -64,7 +71,17 @@ main {
 
 .signup-form button[type="submit"] {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1rem;
+    font: inherit;
+}
+
+.signup-form button[disabled]{
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
 }
 
 @media (min-width: 40rem) {
