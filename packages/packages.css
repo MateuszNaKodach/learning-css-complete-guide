@@ -54,6 +54,9 @@ main {
     font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
+    font-weight: 900;
+    font-style: italic;
+    font-family: Roboto, sans-serif;
 }
 
 #plus {
