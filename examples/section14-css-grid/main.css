@@ -7,8 +7,8 @@ Nice GRID SHorthand: https://udemy-images.s3.amazonaws.com/redactor/raw/2018-04-
     display: grid;
     height: 500px;
     /* grid-template-columns: 200px 5rem 20% auto; */
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
+    grid-template-columns: [hd-start] repeat(4, [col-start] 25% [col-end]) [hd-end];
+    grid-template-rows: [hd-start] 5rem [hd-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
     grid-template-areas:
             "header header header header"
             "side side main main"
@@ -18,6 +18,7 @@ Nice GRID SHorthand: https://udemy-images.s3.amazonaws.com/redactor/raw/2018-04-
 
 .el1 {
     background: rgba(255, 154, 72, 0.5);
+    grid-column: col-start 2 / col-end 2;
 }
 
 .el2 {
